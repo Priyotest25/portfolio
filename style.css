@@ -15,7 +15,7 @@ body{
   position:fixed;
   top:0;
   width:100%;
-  padding:20px 8%;
+  padding:5px 8%;
   display:flex;
   justify-content:space-between;
   align-items:center;
@@ -24,10 +24,20 @@ body{
   z-index:1000;
 }
 
+.portimage{
+  border-radius: 20px;
+}
+
 .logo{
   font-size:24px;
   font-weight:700;
   color:#7CFFB2;
+  display: flex;
+  align-items: center;
+}
+
+.logo span{
+  margin-left: 10px;
 }
 
 .nav-links{
@@ -290,4 +300,44 @@ body{
   .nav-links{
     gap:15px;
   }
+}
+
+
+.education-grid,
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.edu-card,
+.cert-card {
+  background: #111827;
+  padding: 30px;
+  border-radius: 18px;
+  transition: 0.3s;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.edu-card:hover,
+.cert-card:hover {
+  transform: translateY(-8px);
+}
+
+.edu-card h3,
+.cert-card h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.edu-card p,
+.cert-card p {
+  color: #cbd5e1;
+  margin-bottom: 10px;
+}
+
+.edu-card span {
+  color: #60a5fa;
+  font-size: 14px;
 }
